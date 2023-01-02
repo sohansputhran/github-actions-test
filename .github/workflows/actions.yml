@@ -10,6 +10,15 @@ jobs:
         run: |
           pwd
           ls
+      
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: List files after Checkout 
+        run: |
+          pwd
+          ls -a
+
       - name: Simple JS Actions
         # id to uniquely identify this step
         id: greet
