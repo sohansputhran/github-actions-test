@@ -21,6 +21,7 @@ jobs:
     
   run-windows-command:
     runs-on: windows-latest
+    # To make serial execution instead of parallel execution
     needs: [run-shell-command]
     steps:
       - name: Directory Powershell
